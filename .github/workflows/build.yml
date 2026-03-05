@@ -1,7 +1,7 @@
 name: Build APK
-on: 
+on:
   push:
-  workflow_dispatch: # هذا السطر سيجعل زر التشغيل يظهر لك يدوياً
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,3 +18,4 @@ jobs:
         with:
           name: package
           path: bin/*.apk
+          
